@@ -177,7 +177,7 @@ public abstract class TransformationAccuracy {
 		// forward transform.
 		boolean forwardSuccess = doForwardTransformation(sourceCRS, targetCRS, source, target, forwardEpsilon, output);
 
-		LOG.debug(output.toString());
+		System.out.println(output.toString());
 		assertEquals(true, forwardSuccess);
 
 	}
